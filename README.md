@@ -12,6 +12,6 @@ First you need to become a root user:
   * `sudu su`
   
 Run the following as root user:
-  wget -qO- http://goo.gl/C7PoB | sh
+    `wget -qO- http://goo.gl/C7PoB | sh`
 
 Then reboot, and enjoy your touchpad.

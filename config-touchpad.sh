@@ -12,6 +12,6 @@ fi
 
 echo "Downloading the configuration file for ALPS touchpad"
 rm $CONFIG_FILE
-wget https://gist.github.com/raw/4552236/alps.xorg.conf -O $CONFIG_FILE
+wget -qO $CONFIG_FILE https://gist.github.com/raw/4552236/alps.xorg.conf
 
 echo "Configuration finished. Reboot to make the change effective."

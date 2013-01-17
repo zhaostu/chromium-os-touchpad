@@ -6,14 +6,19 @@ Credit goes to ArnoldTheBat as he published the solution [here](http://arnoldthe
 
 ## Usage
 First you need to become a root user:
-  * Press `Ctrl + Alt + F2` (You can press `Ctrl + Alt + F1` to come back).
-  * Enter username `chronos`
-  * Enter password `facepunch` for Hexxeh builds or `password` for ArnoldTheBat builds.
-  * `sudu su`
-  * Enter the above password again.
+ * Press `Ctrl + Alt + F2` (You can press `Ctrl + Alt + F1` to come back).
+ * Enter username `chronos`
+ * Enter password `facepunch` for Hexxeh builds or `password` for ArnoldTheBat builds.
+ * `sudu su`
+ * Enter the above password again.
   
 Run the following as root user:
 
     wget -qO- http://goo.gl/C7PoB | sh
 
 Then reboot, and enjoy your touchpad.
+
+## Notes
+ * The configuration files used here are compiled from the [Synaptics Touchpad - Gentoo Linux Wiki](http://en.gentoo-wiki.com/wiki/Synaptics_Touchpad).
+ * There are also other places giving example configurations, for example [Touchpad Synaptics - ArchWiki](https://wiki.archlinux.org/index.php/Touchpad_Synaptics) and [SynapticsTouchpad - Debian Wiki](http://wiki.debian.org/SynapticsTouchpad)
+ * The offical documentation for the configuration is in [Synaptics man page](http://www.x.org/releases/X11R7.6/doc/man/man4/synaptics.4.xhtml)

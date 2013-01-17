@@ -10,6 +10,7 @@ First you need to become a root user:
   * Enter username `chronos`
   * Enter password `facepunch` for Hexxeh builds or `password` for ArnoldTheBat builds.
   * `sudu su`
+  * Enter the above password again.
   
 Run the following as root user:
 

@@ -9,6 +9,8 @@ if grep -qi synaptics /proc/bus/input/devices; then
 elif grep -qi alps /proc/bus/input/devices; then
   echo "ALPS touchpad detected."
   TOUCHPAD="alps"
+elif grep -qi elantech /proc/bus/input/devices; then
+  echo "Elantech touchpad detected."
 else
   echo "No known touchpad found, exiting."
   exit

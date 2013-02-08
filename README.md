@@ -1,4 +1,4 @@
-# Configure Synaptics/ALPS touchpad for Chromiums OS
+# Configure Synaptics/ALPS/ElanTech touchpad for Chromiums OS
 
 As the vanilla Chromium OS builds defaults to the "cmt" driver, on many laptops the touchpad won't work out of box. This script configures Synaptics/ALPS/Elantech touchpad for your Chromium OS. The script can detect which brand the touchpad you have and install the proper configuration.
 

@@ -1,6 +1,6 @@
 # Configure Synaptics/ALPS/ElanTech touchpad for Chromiums OS
 
-> Note: Many users including me are experiencing alignment issue with touchpad after running this script. That is, the cursor would not show up at where it actually is. Using a USB mouse, however, does not have this problem. There is no known fix yet. If you know a fix, please tell me. Please.
+> Many users including me are experiencing alignment issue with touchpad after running this script. That is, the cursor would not show up at where it actually is. Using a USB mouse, however, does not have this problem. There is no known fix yet. If you know a fix, please tell me. Please.
 
 As the vanilla Chromium OS builds defaults to the "cmt" driver, on many laptops the touchpad won't work out of box. This script configures Synaptics/ALPS/Elantech touchpad for your Chromium OS. The script can detect which brand the touchpad you have and install the proper configuration.
 
@@ -16,12 +16,13 @@ First you need to become a root user:
   
 Run the following as root user:
 
-    wget -qO- http://goo.gl/C7PoB | sh
+    wget -qO- http://goo.gl/1VWycc | sh
 
 Then reboot, and enjoy your touchpad.
 
 ## Notes
  * The configuration files used here are compiled from the [Synaptics Touchpad - Gentoo Linux Wiki](http://en.gentoo-wiki.com/wiki/Synaptics_Touchpad).
- * There are also other places giving example configurations, for example [Touchpad Synaptics - ArchWiki](https://wiki.archlinux.org/index.php/Touchpad_Synaptics) and [SynapticsTouchpad - Debian Wiki](http://wiki.debian.org/SynapticsTouchpad)
+ * There are also other places giving example configurations, for example [Touchpad Synaptics - ArchWiki](https://wiki.archlinux.org/index.php/Touchpad_Synaptics) and [SynapticsTouchpad - Debian Wiki](http://wiki.debian.org/SynapticsTouchpad). You can try them to see if it works on your computer.
  * The offical documentation for the configuration is in [Synaptics man page](http://www.x.org/releases/X11R7.6/doc/man/man4/synaptics.4.xhtml)
- * For questions/suggestions, you can email <z12y12l12@gmail.com>.
+ * Please feel free to fork this project and tweak it. If you have a better configuration, create a pull request.
+ * For questions/suggestions, please use the GitHub Issues.

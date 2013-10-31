@@ -1,6 +1,7 @@
 #!/bin/sh
 
-CONFIG_FILE="/etc/X11/xorg.conf.d/50-touchpad-cmt.conf"
+CONFIG_FILE=$(echo /etc/X11/xorg.conf.d/??-touchpad-cmt.conf)
+test -f $CONFIG_FILE || CONFIG_FILE="/etc/X11/xorg.conf.d/40-touchpad-cmt.conf"
 
 # Check which type of touchpad is present.
 if grep -qi synaptics /proc/bus/input/devices; then
@@ -17,8 +18,10 @@ else
   exit
 fi
 
+set -e
+
 echo "Mounting the rootfs as read-write..."
-mount -o remount, rw /
+mount -o remount,rw /
 
 if [ ! -e "$CONFIG_FILE.bak" ]; then
   echo "Creating backup for $CONFIG_FILE..."
@@ -26,7 +29,6 @@ if [ ! -e "$CONFIG_FILE.bak" ]; then
 fi
 
 echo "Downloading the configuration file for your touchpad..."
-rm $CONFIG_FILE
 wget -qO $CONFIG_FILE https://raw.github.com/zhaostu/chromium-os-touchpad/master/$TOUCHPAD.xorg.conf
 
 echo "Configuration finished. Please reboot to make the change effective."

@@ -1,6 +1,6 @@
 # Configure Synaptics/ALPS/ElanTech touchpad for Chromiums OS
 
-> Many users including me are experiencing alignment issue with touchpad after running this script. That is, the cursor would not show up at where it actually is. Using a USB mouse, however, does not have this problem. There is no known fix yet. If you know a fix, please tell me. Please.
+> Using the latest Chromium OS build seems to fix the alignment issue. To get ArnoldTheBat's latest build, you can go to [here](http://chromium.arnoldthebat.co.uk/).
 
 As the vanilla Chromium OS builds defaults to the "cmt" driver, on many laptops the touchpad won't work out of box. This script configures Synaptics/ALPS/Elantech touchpad for your Chromium OS. The script can detect which brand the touchpad you have and install the proper configuration.
 

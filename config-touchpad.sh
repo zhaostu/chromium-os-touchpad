@@ -31,4 +31,4 @@ fi
 echo "Downloading the configuration file for your touchpad..."
 wget -qO $CONFIG_FILE https://raw.github.com/zhaostu/chromium-os-touchpad/master/$TOUCHPAD.xorg.conf
 
-echo "Configuration finished. Please reboot to make the change effective."
+echo "Configuration finished. Please type 'restart ui' or reboot to make the change effective."

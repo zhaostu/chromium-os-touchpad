@@ -7,13 +7,19 @@ As the vanilla Chromium OS builds defaults to the "cmt" driver, on many laptops 
 Credit goes to ArnoldTheBat as he published the solution [here](http://arnoldthebat.co.uk/wordpress/2013/01/08/how-to-get-the-touch-pad-working-in-chromium-os/). This script automates the configuration process and (hopefully) installs more generic configurations.
 
 ## Usage
-First you need to become a root user:
+First you need to get shell access:
  * Press `Ctrl + Alt + F2` (You can press `Ctrl + Alt + F1` to come back).
  * Enter username `chronos`
  * Enter password `facepunch` for Hexxeh builds or `password` for ArnoldTheBat builds.
+
+Or, if your Chromium OS is in developer mode, you can access shell through:
+ * Press `Ctrl + Alt + T`. This will launch "crosh" in a new tab.
+ * Enter `shell` in "crosh". If you get an error message, it is likely because the Chromium OS is not in developer mode.
+
+Now you need to become a root user:
  * `sudu su`
  * Enter the above password again.
-  
+
 Run the following as root user:
 
     wget -qO- http://goo.gl/1VWycc | sh

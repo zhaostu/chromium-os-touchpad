@@ -2,7 +2,10 @@
 
 This project is no longer supported as I am no longer using Chromium OS on a
 daily basis. If you tried the installer and it is not working for you, chances
-are that I could not get it working either on your specific setup.
+are that I could not get it working either on your specific setup. Your best
+bet is to look at
+[the original solution that inspired this project](http://arnoldthebat.co.uk/wordpress/2013/01/08/how-to-get-the-touch-pad-working-in-chromium-os/)
+and try to make it work manually.
 
 If you can help solve some of those issues, pull requests are welcome.
 

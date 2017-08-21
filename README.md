@@ -1,3 +1,11 @@
+# No longer supported
+
+This project is no longer supported as I am no longer using Chromium OS on a
+daily basis. If you tried the installer and it is not working for you, chances
+are that I could not get it working either on your specific setup.
+
+If you can help solve some of those issues, pull requests are welcome.
+
 # Configure Synaptics/ALPS/ElanTech touchpad for Chromiums OS
 
 > Using the latest Chromium OS build seems to fix the alignment issue. To get ArnoldTheBat's latest build, you can go to [here](http://chromium.arnoldthebat.co.uk/).
